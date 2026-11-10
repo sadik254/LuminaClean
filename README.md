@@ -1,6 +1,6 @@
 # LuminaClean ⚡️
 <p align="center">
-  <img src="Assets/Icons/AppIcon_512.png" alt="LuminaClean Icon" width="128" height="128" />
+  <img src="Assets/Icons/AppIcon_512.webp" alt="LuminaClean Icon" width="128" height="128" />
 </p>
 
 <h3 align="center">The Lightweight, Free & Native macOS Junk Cleaner & Optimizer</h3>
@@ -27,7 +27,7 @@
 ## 🎬 Live Demonstration
 
 <p align="center">
-  <img src="Assets/Screenshots/demo.gif" alt="LuminaClean Demo" width="850" />
+  <img src="Assets/Screenshots/demo.webp" alt="LuminaClean Demo" width="850" />
 </p>
 
 ---
@@ -38,31 +38,37 @@
   <tr>
     <td width="50%" align="center">
       <b>Interactive Dashboard & Deep Scan</b><br/>
-      <img src="Assets/Screenshots/scanned_results.png" alt="Dashboard Scan" width="100%" />
+      <img src="Assets/Screenshots/scanned_results.webp" alt="Dashboard Scan" width="100%" />
     </td>
     <td width="50%" align="center">
       <b>Developer Cache Inspector</b><br/>
-      <img src="Assets/Screenshots/developer_cache.png" alt="Developer Junk" width="100%" />
+      <img src="Assets/Screenshots/developer_cache.webp" alt="Developer Junk" width="100%" />
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <b>System & Application Caches</b><br/>
-      <img src="Assets/Screenshots/system_junk.png" alt="System Junk" width="100%" />
+      <img src="Assets/Screenshots/system_junk.webp" alt="System Junk" width="100%" />
     </td>
     <td width="50%" align="center">
       <b>Safe Clean Confirmation</b><br/>
-      <img src="Assets/Screenshots/clean_confirmation.png" alt="Clean Dialog" width="100%" />
+      <img src="Assets/Screenshots/clean_confirmation.webp" alt="Clean Dialog" width="100%" />
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <b>Clean Complete & Reclaimed Space</b><br/>
-      <img src="Assets/Screenshots/clean_complete.png" alt="Clean Complete" width="100%" />
+      <img src="Assets/Screenshots/clean_complete.webp" alt="Clean Complete" width="100%" />
     </td>
     <td width="50%" align="center">
-      <b>Safety Safeguards & Preferences</b><br/>
-      <img src="Assets/Screenshots/settings.png" alt="Settings" width="100%" />
+      <b>In-App Release Updates</b><br/>
+      <img src="Assets/Screenshots/update_available.webp" alt="In-App Updates" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <b>Safety Safeguards & Privacy Principles</b><br/>
+      <img src="Assets/Screenshots/settings.webp" alt="Settings" width="70%" />
     </td>
   </tr>
 </table>
