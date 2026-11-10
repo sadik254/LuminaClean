@@ -55,6 +55,16 @@
       <img src="Assets/Screenshots/clean_confirmation.png" alt="Clean Dialog" width="100%" />
     </td>
   </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>Clean Complete & Reclaimed Space</b><br/>
+      <img src="Assets/Screenshots/clean_complete.png" alt="Clean Complete" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <b>Safety Safeguards & Preferences</b><br/>
+      <img src="Assets/Screenshots/settings.png" alt="Settings" width="100%" />
+    </td>
+  </tr>
 </table>
 
 ---
@@ -69,7 +79,8 @@
 * **📦 App Leftovers Hunter:** Detects orphaned folders in `~/Library/Application Support` from apps that have already been deleted.
 * **🗑 macOS Trash Bin:** Direct inspection and selective purging of your Mac's `.Trash`.
 * **🔍 Complete Transparency:** Inspect exact file paths, sizes, and item counts with a **"Reveal in Finder"** button before cleaning.
-* **🔒 100% Private & Offline:** Zero analytics, no tracking, no background daemons, no ads, and no network connections.
+* **🔄 Seamless In-App Updates:** One-click check for updates from GitHub Releases with automatic background download, in-place installation, and instant restart.
+* **🔒 100% Private & Offline:** Zero analytics, no tracking, no background daemons, no ads, and no external connections except user-initiated release checks.
 
 ---
 

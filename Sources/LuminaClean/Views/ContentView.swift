@@ -39,7 +39,7 @@ public struct ContentView: View {
         case .trash:
             CategoryDetailView(category: .trash, viewModel: viewModel)
         case .settings:
-            SettingsView()
+            SettingsView(viewModel: viewModel)
         }
     }
 }

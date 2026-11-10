@@ -43,6 +43,7 @@ public final class AppViewModel {
     public var scanProgress: Double = 0.0
     public var lastCleanedBytes: Int64 = 0
     public var showCleanConfirmation: Bool = false
+    public var updateService: UpdateService = UpdateService.shared
 
     public init() {
         refreshDiskInfo()

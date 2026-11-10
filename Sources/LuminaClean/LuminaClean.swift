@@ -9,5 +9,15 @@ struct LuminaCleanApp: App {
         }
         .windowStyle(.titleBar)
         .windowToolbarStyle(.unified)
+        .commands {
+            CommandGroup(after: .appInfo) {
+                Button("Check for Updates...") {
+                    Task { @MainActor in
+                        await UpdateService.shared.checkForUpdates()
+                    }
+                }
+                .keyboardShortcut("U", modifiers: [.command])
+            }
+        }
     }
 }
