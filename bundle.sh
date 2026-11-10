@@ -4,8 +4,14 @@ set -e
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$DIR"
 
-echo "Building LuminaClean in Release mode..."
-DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer swift build -c release
+VERSION="${1:-1.0.0}"
+
+if [ -d "/Applications/Xcode.app" ]; then
+    export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer"
+fi
+
+echo "Building LuminaClean v$VERSION in Release mode..."
+swift build -c release
 
 APP_NAME="LuminaClean.app"
 APP_DIR="$DIR/$APP_NAME"
@@ -44,9 +50,9 @@ cat <<EOF > "$APP_DIR/Contents/Info.plist"
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>1.0.0</string>
+    <string>$VERSION</string>
     <key>CFBundleVersion</key>
-    <string>1</string>
+    <string>$VERSION</string>
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>LSMinimumSystemVersion</key>
@@ -57,5 +63,10 @@ cat <<EOF > "$APP_DIR/Contents/Info.plist"
 </plist>
 EOF
 
+echo "Creating zip archive..."
+ZIP_NAME="LuminaClean-v${VERSION}-macOS.zip"
+rm -f "$DIR/$ZIP_NAME"
+ditto -c -k --sequesterRsrc --keepParent "$APP_DIR" "$DIR/$ZIP_NAME"
+
 echo "App bundle created successfully at: $APP_DIR"
-echo "You can launch it with: open \"$APP_DIR\""
+echo "Zip archive created at: $DIR/$ZIP_NAME"
